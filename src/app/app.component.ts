@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'brandtalks';
-  constructor() {
+  public selected = false;
+  public scroll: any; 
+  public sections = 4;
+  constructor(private renderer: Renderer2) {
   }
-  activeMenu() {
-    window.addEventListener("scroll", this.activeMenu)
+  ngOnInit() {
+    this.renderer.listen(window, 'scroll', ($event) => {
+       this.scroll = (window.scrollY / this.sections);
+    })
   }
+
 }

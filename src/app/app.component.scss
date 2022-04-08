@@ -1,6 +1,14 @@
 .homepage {
-    font-family: questrial, sans-serif;
-
+    color: #101025;
+    .selected {
+        color: #af2b23;
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: #af2b23;
+    }
     header {
         position: sticky;
         top: 0px;
@@ -31,29 +39,8 @@
         }
 
         .menu-bar ul {
-            .ul li {
-                margin-left: 32px;
-            }
-
-            li:hover {
-                font-weight: 600;
-                cursor: pointer;
-                color: #31286b;
-            }
-
-            li {
-                // color: #fff;
-                font-weight: 500;
-                cursor: pointer;
-
-                a {
-                    color: #44596d;
-                    font-size: 1.2rem;
-                }
-            }
-
-            li :hover {
-                color: rgb(0, 0, 0);
+            a li {
+                color: rgb(139, 0, 0);
             }
         }
     }
@@ -79,6 +66,7 @@
 
                 h1 {
                     margin: 30px 0;
+                    color: #f8d36d;
                 }
 
                 h5 {
@@ -110,11 +98,6 @@
         .heading {
             height: 100%;
             text-align: center;
-
-            h1 {
-                font-size: 40px;
-                font-weight: 700;
-            }
         }
 
         .content-section {
@@ -140,7 +123,6 @@
             }
         }
     }
-
 
     .container {
         .list-card {
@@ -180,10 +162,8 @@
         }
     }
 
-
     .our-values {
         margin: 50px 0;
-
         .container {
             .head {
                 h1 {
@@ -209,9 +189,11 @@
                             .title {
                                 text-align: justify;
 
-                                h4 {}
+                                h4 {
+                                }
 
-                                p {}
+                                p {
+                                }
                             }
                         }
                     }
@@ -224,7 +206,10 @@
         .container {
             .contact-us-container {
                 .elementor-widget-container {
-                    padding: 4% 5% 4% 0%;
+                    padding: 10% 5% 4% 0%;
+                    h4 {
+                        font-weight: 600;
+                    }
                 }
 
                 .bottom-elementor-widget-container {
@@ -233,8 +218,10 @@
             }
 
             .form-row {
-                padding: 4% 5% 4% 5%;
-
+                padding: 4% 15% 4% 5%;
+                h1 {
+                    margin-bottom: 10%;
+                }
                 .form-group {
                     margin-right: 20px;
 
@@ -244,6 +231,7 @@
                         border-bottom: 1px solid #3468;
                         background: transparent;
                         border-radius: 0;
+                        box-shadow: none;
                     }
                 }
             }
@@ -253,7 +241,8 @@
 
                 .btn-submit {
                     border-radius: 6px;
-                    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+                    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+                        rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
                     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
                     color: #ffffff;
                     padding: 10px 30px;
@@ -269,35 +258,33 @@
     }
 
     .about {
+        background: bisque;
         margin: 100px 0;
-
-        .card {
-            box-shadow: 6px 5px 7px 7px #abb9bd33;
+        .container {
+            // box-shadow: 6px 5px 7px 7px #abb9bd33;
             // background: #f2f2fa;
             border: none;
             padding: 40px;
-
+            // background: #eaeaea;
             .head {
                 text-align: center;
                 max-width: 700px;
                 margin: auto;
 
-                h2 {
+                h1 {
                     margin: 30px 0;
                 }
             }
 
             .body {
-                // max-width: 900px;
                 margin: 30px auto;
 
                 .row {
                     .image {
                         width: 90%;
-                        // box-shadow: 2px 6px 16px 1px #1467;
                     }
 
-                    .col-4 {
+                    .col-6 {
                         margin: auto;
 
                         .text {
@@ -305,116 +292,70 @@
                             margin: auto;
                             margin: 0 30px 30px 0;
                         }
-
-                        .learn {
-                            border-radius: 6px;
-                            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-                            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-                            color: #ffffff;
-                            padding: 10px 30px;
-                            border: none;
-                            font-weight: 600;
-                        }
                     }
                 }
             }
         }
     }
-
-    .marketing {
-        .marketing-body .marketing-card-list .marketing-card .marketing-content {
-            text-align: left;
-        }
-
-        .marketing-heading {
-            h3 {
-                text-decoration: underline;
-            }
-        }
-    }
-
 
     .footer {
         background: #eaf6ff;
-
-        .row {
-            .col-3 {
-                a {
-                    img {
-                        width: 100%;
+        .container {
+            padding: 10px 0;
+            .row {
+                .col-6 {
+                    align-self: center;
+                    p {
+                        margin: 0;
                     }
-                }
-                align-self: center;
-
-                .footer-menu {
-                    ul {
-                        margin: auto;
-                        list-style: none;
-
-                        li {
-                            border-right: 1px solid rgb(119, 46, 46);
-                            display: inline-block;
-                            margin-bottom: 10px;
-
-                            .nav-link {
-                                color: #000000;
-
-                            }
-
-                            .nav-link :hover {
-                                color: #31286b;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .col-5 {
-                align-self: center;
-                text-align: center;
-                .social-media {
-                    h4 {
-                        margin-bottom: 20px;
-                    }
-
-                    ul {
-                        justify-content: center;
-                        display: flex;
-                        list-style: none;
-                        padding: 0;
-
-                        li {
-                            margin-right: 10px;
-
-                            img {
-                                width: 30px;
-                            }
-                        }
-                    }
-                }
-            }
-            .col-4 {
-                text-align: right;
-                .company-add {
-                    h4 {
-                        margin: 40px 0  20px;
-                    }
-                    ul {
-                        list-style: none;
-                        padding: 0;
+                    .footer-menu {
+                        ul {
+                            margin: auto;
+                            list-style: none;
+                            align-self: center;
+                            li {
+                                border-right: 1px solid rgb(119, 46, 46);
+                                display: inline-block;
+                                margin-bottom: 10px;
     
-                        li {
-                            line-height: 2.2;
-                            cursor: pointer;
+                                .nav-link {
+                                    color: #000000;
+                                }
+    
+                                .nav-link :hover {
+                                    color: #31286b;
+                                }
+                            }
                         }
                     }
-                    ul li :focus {
-                        color: #dd1d65;
+                }
+    
+                .col-6 {
+                    align-self: center;
+                    .social-media {
+                        float: right;
+                        ul {
+                            h4 {
+                                margin: 0 20px;
+                                font-size: 1rem;
+                                font-weight: 600;
+                            }
+                            justify-content: center;
+                            display: flex;
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            li {
+                                margin-right: 10px;
+    
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                        }
                     }
                 }
             }
-
         }
-
     }
 }
